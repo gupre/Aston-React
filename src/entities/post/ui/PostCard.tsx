@@ -6,8 +6,8 @@ interface IPostCardProps {
     //...
 }
 
-export function PostCard({post}: IPostCardProps) {
+export function PostCard({post}: IPostCardProps) {    
     return (
-        <div className={styles.card}>Карточка {post.id} </div>
+        <div className={`${styles.card}`}>Карточка {post.id} </div>
     )
 }

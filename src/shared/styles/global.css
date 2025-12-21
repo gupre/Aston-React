@@ -50,9 +50,28 @@ button:hover {
   border-color: #646cff;
 }
 button:focus,
-button:focus-visible {
+button:focus-visible {  
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+body.light {
+  --bg: #f3f4f6;
+  --text: #1a1a1a;
+  --button-bg: #f3f4f6;
+  --button-text: #1a1a1a;
+  --modal-bg: #ffffff;
+  --modal-text: #111827;
+}
+
+body.dark {
+  --bg: #1a1a1a;
+  --text: #f3f4f6;
+  --button-bg: #252424;
+  --button-text: #f9fafb;
+  --modal-bg: #272b2f;
+  --modal-text: #ffffff; 
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

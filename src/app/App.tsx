@@ -2,10 +2,11 @@ import styles from './App.module.css';
 import { MainLayot } from '../shared/layouts/MainLayout';
 import { Footer } from '../widgets/LayoutFooter/Footer';
 import { Header } from '../widgets/LayoutHeader/Header';
+// import { useTheme } from '../shared/lib/theme/useTheme';
 
-function App() {
+function App() {  
   return (
-    <div className={styles.app}>
+    <div className={`${styles.app}`}>
       <Header />
       <main className={styles.main}>
         <MainLayot />
