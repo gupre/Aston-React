@@ -4,9 +4,11 @@
   min-height: 100vh;
   width: 100%; 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb;
-}
 
+  background-color: var(--bg);
+  color: var(--text);
+
+}
 
 .main {
   flex: 1; 
