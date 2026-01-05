@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ThemeSwitcher } from '../../features/ThemeSwitcher';
 import { Button } from '../../shared/ui/Button/Button';
-import { Modal } from '../../shared/ui/Modal/Modal';
+import { Modal } from '../../shared/ui/Modal/index';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -16,6 +16,8 @@ export function Header() {
       смена светлой и тёмной темы,
       управление интерфейсом через модальные окна и кнопки.
       `;
+    const author = "Автор: Анастасия Фёдорова"
+    
     return (
         <header className={styles.header}>
            <h1 className={styles.title}>Посты и комментарии</h1> 
@@ -23,7 +25,14 @@ export function Header() {
              <Button onClick={() => setOpenModal(!openModal)}>{titleModal}</Button>
              <ThemeSwitcher />
            </nav>
-           {openModal && <Modal title={titleModal} onClose={() => setOpenModal(!openModal)}>{contentModal}</Modal>}
+           {openModal && 
+            <Modal onClose={() => setOpenModal(!openModal)}>
+              <Modal.Header>{titleModal}</Modal.Header>
+              <Modal.Body>
+                {contentModal}
+              </Modal.Body>
+              <Modal.Footer>{author}</Modal.Footer>
+            </Modal>}
         </header>
     )
 }

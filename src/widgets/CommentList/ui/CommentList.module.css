@@ -1,0 +1,59 @@
+.commentList {
+  margin-top: 16px;
+  padding: 16px;
+
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
+
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.toggleButton {
+  align-self: flex-start;
+
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 8px;
+  border: 1px solid var(--button-text);
+
+  background-color: var(--button-bg);
+  color: var(--button-text);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.toggleButton:hover {
+  opacity: 0.9;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
