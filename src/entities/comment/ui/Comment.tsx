@@ -6,5 +6,5 @@ interface ICommentProps {
 }
 
 export const Comment = ({ comment }: ICommentProps) => {
-  return <div className={styles.comment}>{comment.text}</div>;
+  return <div className={styles.comment}>{comment.name}</div>;
 };
